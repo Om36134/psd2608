@@ -40,27 +40,28 @@
 <header>
     <div class="container">
         <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+            {{--<div class="container-fluid">--}}
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
             </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            {{--</div>--}}
         </nav>
-        <section>
+        <section class="header-section">
             <div class="section-first-header">
                 <img src="img/header-baner.png" alt="header image" class="card-img-header">
             </div>
@@ -79,7 +80,7 @@
     <div class="about-img">
         <img src="img/about-banner.png" alt="image man">
     </div>
-    <article>
+    <article class="about-art">
         <div class="about-line"></div>
         <h2 class="about-h2">KNOW MORE ABOUT ME</h2>
         <p class="about-p">Lorem ipsum dolor sit amet,
@@ -112,6 +113,8 @@
             <img src="img/user.png" alt="">
             <p class="sercice-second-p">User Testing</p>
         </div>
+    </div>
+    <div class="service-second-section">
         <div class="flex-item">
             <img src="img/look.png" alt="">
             <p class="sercice-second-p">Looks and Feel Design (UI)</p>
@@ -147,6 +150,8 @@
         <div class="flex-item">
             <img src="img/prt-3.png" alt="" class="portfolio-img">
         </div>
+    </div>
+    <div class="portfolio-second-section">
         <div class="flex-item">
             <img src="img/prt-4.png" alt="" class="portfolio-img">
         </div>
@@ -169,11 +174,12 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="section-carousel">
-                    <img src="img/lima.png" alt="...">
-                    <span class="carousel-span">
+        <div class="carousel-border">
+            <div class="carousel-inner" id="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="section-carousel">
+                        <img src="img/lima.png" alt="...">
+                        <span class="carousel-span">
                         <h2>Header text</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
                          consequuntur culpa doloremque exercitationem natus nisi, omnis
@@ -181,12 +187,12 @@
                          maxime nam pariatur praesentium saepe.
                         </p>
                     </span>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="section-carousel">
-                    <img src="img/dima.png" alt="...">
-                    <span class="carousel-span">
+                <div class="carousel-item">
+                    <div class="section-carousel">
+                        <img src="img/dima.png" alt="...">
+                        <span class="carousel-span">
                         <h2>Header text</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
                          consequuntur culpa doloremque exercitationem natus nisi, omnis
@@ -194,12 +200,12 @@
                          maxime nam pariatur praesentium saepe.
                         </p>
                     </span>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="section-carousel">
-                    <img src="img/vera.png" class="d-block" alt="...">
-                    <span class="carousel-span">
+                <div class="carousel-item">
+                    <div class="section-carousel">
+                        <img src="img/vera.png" class="d-block" alt="...">
+                        <span class="carousel-span">
                         <h2>Header text</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
                          consequuntur culpa doloremque exercitationem natus nisi, omnis
@@ -207,17 +213,10 @@
                          maxime nam pariatur praesentium saepe.
                         </p>
                     </span>
+                    </div>
                 </div>
             </div>
         </div>
-        {{--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">--}}
-        {{--<span class="carousel-control-prev-icon" aria-hidden="true"></span>--}}
-        {{--<span class="sr-only">Previous</span>--}}
-        {{--</a>--}}
-        {{--<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">--}}
-        {{--<span class="carousel-control-next-icon" aria-hidden="true"></span>--}}
-        {{--<span class="sr-only">Next</span>--}}
-        {{--</a>--}}
     </div>
     <div class="testimonials-part-2">
         <div class="flex-item-part-2">
@@ -231,7 +230,7 @@
             <p> Happy Client</p>
         </div>
         <div class="flex-item-part-2">
-            <img src="img/blanc.png" alt="">
+            <img src="img/blank.png" alt="">
             <h2>510</h2>br/
             <p> Finished Project</p>
         </div>
@@ -255,7 +254,7 @@
                         <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Name">
                     </div>
                     <div class="col-auto">
-                            <input type="text" class="form-control  mb-2" id="inlineFormInputGroup" placeholder="Email">
+                        <input type="text" class="form-control  mb-2" id="inlineFormInputGroup" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-group">

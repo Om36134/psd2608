@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url("/img/bg.png");
+  background-image: url('../img/bg.png');
   background-repeat: repeat;
   background-size: 100%;
 
@@ -98,7 +98,7 @@ header {
     width: 50px;
     border: 2px solid #7c7c7c;
     margin-top: 40px;
-    margin-bottom: -15px;
+    margin-bottom: 5px;
   }
 
   .about-h2 {
@@ -276,35 +276,41 @@ header {
       font-size: 16px;
       color: #212121b5;
     }
-  }
 
-  .testimonials-part-2 {
-    margin-top: 190px;
-  }
-
-  .flex-item-part-2 {
-    margin: 15px;
-
-    h2 {
-      font-size: 25px;
-      font-weight: 600;
-      color: #212121b5;
-      text-transform: uppercase;
+    .carousel-border {
+      border: 1px solid #000000;
     }
 
-    p {
-      font-size: 15px;
-      color: #212121b5;
-      text-transform: uppercase;
+    .testimonials-part-2 {
+      margin-top: 190px;
     }
-  }
 
+    .flex-item-part-2 {
+      margin: 15px;
+
+      h2 {
+        font-size: 25px;
+        font-weight: 600;
+        color: #212121b5;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 15px;
+        color: #212121b5;
+        text-transform: uppercase;
+      }
+    }
+
+  }
 }
-
 footer {
   margin-top: 140px;
   text-align: center;
-  background-image: url("/img/footer-banner.png");
+  background-image: url(../img/footer-banner.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 
   .footer-first-section {
     margin-top: 140px;
@@ -355,7 +361,7 @@ footer {
 
     ul{
       padding: 0px;
-      
+
       li {
         list-style: none;
         display: inline-block;
@@ -365,7 +371,116 @@ footer {
     p {
       color: #ffffff;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
     }
   }
 }
+
+
+@media (min-width: 480px) {
+    .navbar-brand {
+      width: 359px;
+    }
+
+    .about {
+      margin-top: 70px;
+    }
+
+    .about-line{
+      margin-top: 70px;
+    }
+    .service{
+      margin-top: 70px;
+    }
+    .skills{
+      margin-top: 70px;
+    }
+    .portfolio {
+      margin-top: 70px;
+    }
+
+    .portfolio-second-section {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+@media (min-width: 768px){
+  .navbar-nav {
+    flex-direction: row;
+    float: right;
+    margin-top: -50px;
+  }
+
+  .navbar-brand {
+    width: 100%;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .section-second-header {
+    width: 400px;
+    margin-top: 109px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about-art{
+    width: 50%;
+    padding-right: 50px;
+  }
+
+  .about-img {
+    width: 45%;
+  }
+
+  .about .about-img>img {
+    margin-top: 73px;
+  }
+
+  .service-second-section > .flex-item{
+    width: 33%;
+  }
+
+  .service-second-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .carousel-item{
+    height: 260px;
+    padding: 20px;
+     }
+
+  .testimonials-part-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8rem;
+  }
+
+  .portfolio-second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .form-control {
+    height: calc(3.5em + .75rem + 2px);
+  }
+
+  .form-group > .form-control {
+    height: calc(14.5em + .75rem + 2px);
+    width: 950px;
+    margin-left: 15%;
+  }
+
+}
+
