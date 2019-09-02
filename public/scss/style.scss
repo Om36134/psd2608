@@ -79,6 +79,15 @@ header {
     -webkit-box-shadow: 0px 13px 14px #bababa, inset 0px 0px 1px #ffffff;
     -moz-box-shadow: 0px 13px 14px #bababa, inset 0px 0px 1px #ffffff;
     box-shadow: 0px 13px 14px #bababa, inset 0px 0px 1px #ffffff;
+    margin-right: 15px;
+  }
+
+  .header-btn-left:hover {
+    background-color: #77777770;
+  }
+
+  .header-btn-right:hover {
+    background-color: #77777770;
   }
 
   .section-second-header {
@@ -124,6 +133,10 @@ header {
     font-weight: 600;
     color: #4d4d4d;
   }
+
+  .btn-dowload:hover {
+    background-color: #77777770;
+  }
 }
 
 .service {
@@ -156,6 +169,10 @@ header {
 
   .flex-item {
     margin: 40px;
+  }
+
+  .flex-item:hover {
+    background-color: #ddd;
   }
 }
 
@@ -219,6 +236,10 @@ header {
 .testimonials {
   text-align: center;
   margin-top: 40px;
+
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    border: 1px solid #000;
+  }
 
   .testimonials-line {
     width: 50px;
@@ -459,6 +480,11 @@ footer {
     padding: 20px;
      }
 
+  .carousel.pointer-event {
+    width: 500px;
+    margin: 0 auto;
+  }
+
   .testimonials-part-2 {
     display: flex;
     flex-direction: row;
@@ -478,9 +504,41 @@ footer {
 
   .form-group > .form-control {
     height: calc(14.5em + .75rem + 2px);
-    width: 950px;
-    margin-left: 15%;
   }
 
+  footer .social {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navbar-nav>li>a {
+    font-size: 17px;
+  }
+
+}
+@media (min-width: 1200px){
+  header .card-img-header {
+    width: 82%;
+    margin-left: 13rem;
+  }
+
+  .header-h1 {
+    font-size: 65px;
+  }
+
+  header .header-p {
+    font-size: 23px;
+  }
+
+   .header-btn-right,
+   .header-btn-left {
+    font-size: 14px;
+     font-weight: 600;
+     color: #555555;
+  }
+
+  .carousel.pointer-event {
+    width: 950px;
+  }
 }
 
